@@ -5,7 +5,7 @@ Package Clara avec intégration complète des fonctions d'explication LIME et SH
 ## Installation
 
 ```bash
-pip install .
+pip install git+https://github.com/alexpicart855/Chatbot_clara.git
 ```
 
 ## Utilisation
