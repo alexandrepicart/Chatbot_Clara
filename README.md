@@ -36,13 +36,13 @@ Avant d’installer Clara, vous devez fournir votre **clé API Google**. Vous po
 Ensuite, installez Clara :
 
 ```bash
-pip install git+https://github.com/alexpicart855/Chatbot_clara.git
+pip install git+https://github.com/alexandrepicart/Chatbot_clara.git
 ```
 
 > **Sur Google Colab**, vous pouvez lancer directement dans une cellule :
 >
 > ```bash
-> !pip install git+https://github.com/alexpicart855/Chatbot_clara.git
+> !pip install git+https://github.com/alexandrepicart/Chatbot_clara.git
 > ```
 
 ## Usage
