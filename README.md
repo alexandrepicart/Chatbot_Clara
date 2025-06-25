@@ -16,13 +16,38 @@ Que vous soyez **data scientist**, **analyste métier** ou simplement **curieux*
 
 ## Installation
 
+Avant d’installer Clara, vous devez fournir votre **clé API Google**. Vous pouvez :
+
+- **Dans le shell** (Linux/macOS/Windows) :
+
+  ```bash
+  export GOOGLE_API_KEY="votre_clé_ici"
+  ```
+
+- **Dans un notebook Python** (ex. Google Colab), avant d’installer ou d’importer Clara :
+
+  ```python
+  import os
+  os.environ["GOOGLE_API_KEY"] = "votre_clé_ici"
+  ```
+
+  *Cette méthode définit la variable pour la session Python en cours.*
+
+Ensuite, installez Clara :
+
 ```bash
 pip install git+https://github.com/alexpicart855/Chatbot_clara.git
 ```
 
-> **Colab** : dans une cellule notebook, utilisez `!pip install git+https://github.com/alexpicart855/Chatbot_clara.git`
+> **Sur Google Colab**, vous pouvez lancer directement dans une cellule :
+>
+> ```bash
+> !pip install git+https://github.com/alexpicart855/Chatbot_clara.git
+> ```
 
 ## Usage
+
+L’argument `context` est **optionnel** : il permet à Clara de personnaliser ses explications en fonction de votre **cas d’usage**, du **jeu de données** ou d’éléments métier que vous fournissez.
 
 ```python
 from chatbot_clara import run_chatbot
@@ -47,17 +72,17 @@ run_chatbot(model, X_train, X_test)
 
 ## Structure du projet
 
+Le dépôt se compose d’une structure **épurée** facilitant la maintenance et l’évolution :
+
 ```
 chatbot_clara/    # code du module
-  ├── __init__.py
-  └── chatbot.py
-setup.py          # installation du package
-README.md         # documentation
+  ├── __init__.py  # initialisation du package
+  └── chatbot.py   # logique de dialogue et explications
+setup.py          # script d’installation du package
+README.md         # documentation (ce fichier)
 ```
 
 ## Licence
 
 Ce projet est publié sous la **licence MIT**.
-
-> **Important** : Le fichier `LICENSE` doit être inclus dans toutes les distributions du package. Sans ce fichier, les utilisateurs ne sont pas légalement autorisés à réutiliser ou redistribuer le code.
 
