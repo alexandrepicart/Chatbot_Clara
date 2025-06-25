@@ -4,7 +4,7 @@ Assistant conversationnel pour expliquer vos modèles de machine learning avec L
 
 ## Description
 
-Imaginez un assistant intelligent, toujours prêt à vous accompagner dans la **compréhension** de vos modèles de machine learning : c’est Clara ! Conçue pour démystifier le « boîte noire », Clara vous offre :
+Imaginez un assistant intelligent, toujours prêt à vous accompagner dans la **compréhension** de vos modèles de machine learning : c’est Clara ! Conçue pour démystifier les « boîtes noires », Clara vous offre :
 
 - 🚀 **Chargement aisé** de vos modèles et datasets (Pandas, NumPy, pickle…)
 - 🔍 **Explications locales** (LIME et SHAP) pour chaque prédiction individuellement
