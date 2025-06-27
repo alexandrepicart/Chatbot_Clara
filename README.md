@@ -1,6 +1,6 @@
 # Clara
 
-Assistant conversationnel pour expliquer vos modèles de machine learning avec LIME et SHAP.
+Assistant conversationnel pour expliquer vos modèles de machine learning avec LIME et SHAP, disponible sous forme de package Python `chatbot_clara`.
 
 ## Description
 
@@ -16,7 +16,7 @@ Que vous soyez **data scientist**, **analyste métier** ou simplement **curieux*
 
 ## Installation
 
-Avant d’installer Clara, vous devez fournir votre **clé API Google**. Vous pouvez :
+Le package `chatbot_clara` est disponible directement depuis GitHub. Avant d’installer Clara, vous devez fournir votre **clé API Google**. Vous pouvez :
 
 - **Dans le shell** (Linux/macOS/Windows) :
 
@@ -33,7 +33,7 @@ Avant d’installer Clara, vous devez fournir votre **clé API Google**. Vous po
 
   *Cette méthode définit la variable pour la session Python en cours.*
 
-Ensuite, installez Clara :
+Ensuite, installez Clara avec pip :
 
 ```bash
 pip install git+https://github.com/alexandrepicart/Chatbot_clara.git
@@ -47,7 +47,7 @@ pip install git+https://github.com/alexandrepicart/Chatbot_clara.git
 
 ## Usage
 
-L’argument `context` est **optionnel** : il permet à Clara de personnaliser ses explications en fonction de votre **cas d’usage**, du **jeu de données** ou d’éléments métier que vous fournissez.
+Importez et lancez le chatbot depuis le package `chatbot_clara` :
 
 ```python
 from chatbot_clara import run_chatbot
@@ -72,14 +72,14 @@ run_chatbot(model, X_train, X_test)
 
 ## Structure du projet
 
-Le dépôt se compose d’une structure **épurée** facilitant la maintenance et l’évolution :
+Le dépôt est organisé comme un **package Python** :
 
 ```
-chatbot_clara/    # code du module
-  ├── __init__.py  # initialisation du package
-  └── chatbot.py   # logique de dialogue et explications
-setup.py          # script d’installation du package
-README.md         # documentation (ce fichier)
+chatbot_clara/       # code du module
+  ├── __init__.py     # initialisation du package
+  └── chatbot.py      # logique de dialogue et explications
+setup.py             # script d’installation du package
+README.md            # documentation (ce fichier)
 ```
 
 ## Licence
